@@ -6,16 +6,7 @@ const invitationSection = document.getElementById('invitation-section');
 const bgMusic = document.getElementById('bg-music');
 const heartsContainer = document.getElementById('hearts-bg');
 
-let isMusicPlaying = false;
 
-// Play music on first interaction if possible
-document.body.addEventListener('click', () => {
-    if (!isMusicPlaying) {
-        bgMusic.play().then(() => {
-            isMusicPlaying = true;
-        }).catch(e => console.log("Audio play failed pending interaction"));
-    }
-}, { once: true });
 
 
 // Function to move the 'No' button
@@ -49,6 +40,11 @@ yesBtn.addEventListener('click', () => {
 
     // Scroll to invitation section smoothly
     invitationSection.scrollIntoView({ behavior: 'smooth' });
+
+    // Play music
+    bgMusic.play().catch(error => {
+        console.log("Audio play failed", error);
+    });
 
     // Confetti effect
     triggerConfetti();
