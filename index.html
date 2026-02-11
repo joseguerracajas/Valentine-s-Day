@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi Valentín?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+    <div class="hearts-container" id="hearts-bg"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1 class="main-title">Para la persona más especial...</h1>
+        <p class="subtitle">Desliza hacia abajo para una sorpresa ❤️</p>
+        <div class="scroll-indicator">⬇️</div>
+    </section>
+
+    <!-- Question Section -->
+    <section class="question-section" id="question-section">
+        <div class="card" id="question-card">
+            <h2>¿Quieres ser mi Valentín? <span class="heart-icon">❤️</span></h2>
+            <p>Harías mi 14 de febrero muy especial...</p>
+            <div class="buttons">
+                <button id="yes-btn" class="btn yes-btn">¡Sí, claro que sí!</button>
+                <button id="no-btn" class="btn no-btn">No</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Invitation Section (Hidden initially) -->
+    <section class="invitation-section hidden" id="invitation-section">
+        <div class="card invitation-card">
+            <h1>¡Sabía que dirías que sí! 💖</h1>
+            <p>Prepárate para una cita increíble este 14 de febrero.</p>
+            <div class="details">
+                <p class="love-note">
+                    Desde que llegaste a mi vida, cada día tiene algo especial… como si el mundo hubiera decidido
+                    sonreírme un poquito más.
+                </p>
+                <p class="love-note">
+                    Y ahora que se acerca San Valentín, no quiero que sea solo una fecha más. Quiero que sea un recuerdo
+                    que guardemos con una sonrisa, una noche donde el tiempo se detenga y solo existamos tú y yo.
+                </p>
+                <p class="love-note">
+                    Prometo mirarte como si fueras la única estrella en el cielo, hacerte reír hasta que te duelan las
+                    mejillas y recordarte, en cada detalle, lo increíble que eres para mí.
+                </p>
+                <p class="romantic-msg">
+                    No quiero solo invitarte a salir…<br>
+                    quiero invitarte a vivir un momento que nos haga latir el corazón un poquito más fuerte 💖
+                </p>
+            </div>
+            <img src="https://media.giphy.com/media/26BRv0ThflsHCqDrG/giphy.gif" alt="Celebración"
+                class="celebration-gif">
+        </div>
+    </section>
+
+    <!-- Música de fondo: Lover - Taylor Swift -->
+    <audio id="bg-music" loop>
+        <source src="lover.mp3" type="audio/mpeg">
+        <!-- NOTA: Debes agregar el archivo 'lover.mp3' en la misma carpeta o cambiar la URL -->
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
